@@ -38,6 +38,11 @@ Takes an optional scalar value as input. The value '42' is the default value for
 passed value or the default. (That means if you pass 0 or some other untrue scalar value, the return value 
 will be false.)
 
+=item * foo()
+
+Takes no input and prints any attributes that are defined in the object.
+Returns the number of attributes stored in the object.
+
 =back
 
 =head1 AUTHOR
@@ -85,6 +90,16 @@ package Acme::Github::Test 0.01 {
 
       say "$quux has been frobulated!";
       return $quux;
+  }
+
+  sub foo {
+      my $self = shift;
+
+      foreach my $key ( sort keys %{ $self } ) {
+          say "$key - $self->{$key}";
+      }
+
+      return scalar keys %{ $self };
   }
 }
 
