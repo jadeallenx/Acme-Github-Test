@@ -64,7 +64,9 @@ Public License (version 2)
 
 =cut
 
-package Acme::Github::Test 0.01 {
+package Acme::Github::Test 0.02 {
+
+  our $VERSION = '0.02';
 
   sub new {
       my $class = shift;
