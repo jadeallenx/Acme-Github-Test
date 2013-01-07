@@ -50,7 +50,7 @@ Mark Allen C<< <mallen@cpan.org> >>
 
 =item * https://github.com/mrallen1/Acme-Github-Test
 
-=item * https://speakerdeck.com/u/mrallen1/intro-to-git
+=item * https://speakerdeck.com/mrallen1/intro-to-git-for-the-perl-hacker
 
 =back
 
