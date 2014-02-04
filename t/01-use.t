@@ -1,6 +1,6 @@
 #!perl -T
 
-use Test::More tests => 6;
+use Test::More tests => 7;
 use Acme::Github::Test;
 
 my $acme = Acme::Github::Test->new( 23 => 'skidoo' );
@@ -11,6 +11,7 @@ ok($acme->frobulate, 'frobulate() returns true');
 is($acme->frobulate, 42, 'frobulate defaults to 42');
 is($acme->frobulate('barbaz'), 'barbaz', 'frobulate correctly returns passed value');
 is($acme->frobulate(0), 0, 'frobulate correctly uses a false value');
+is($acme->foo(), 1, 'foo returns right number of attributes');
 
 
 
